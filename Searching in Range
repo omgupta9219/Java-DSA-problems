@@ -5,6 +5,7 @@ public class main {
         int index1=1;
         int index2=4;
         System.out.println(searchinRange(arr,target,index1,index2));
+        System.out.println(minimum(arr));
         
     }
     public static boolean searchinRange(int[]arr, int target,int index1,int index2){
@@ -19,5 +20,17 @@ public class main {
             }
         }
         return false;
+    }
+    static int minimum(int[]arr){
+        int mini=arr[0];
+        for(int i=0;i<arr.length;i++){
+            
+            if(arr[i]<mini){
+                mini=arr[i];
+                
+            }
+        }
+    return mini;
+        
     }
 }
