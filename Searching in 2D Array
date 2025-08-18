@@ -1,0 +1,27 @@
+
+import java.util.Arrays;
+
+public class Searchin2DArray{
+
+    public static void main(String[]args){
+        int[][] arr={
+            {10,20,30,40},
+            {50,60,70,80},
+            {90,100,110,120}
+        };
+        int target=90;
+        int[] ans=search(arr,target);
+        System.out.println(Arrays.toString(ans));
+    }
+
+    public static int[] search(int[][] arr,int target){
+        for(int i=0;i<arr.length;i++){
+            for (int j=0;j<arr[i].length;j++){
+                if(arr[i][j]==target){
+                    return new int[] {i,j};
+                }
+            }
+        }
+    return new int[]{-1,-1};
+    }
+}
