@@ -1,0 +1,14 @@
+public class singleNumber{
+    public  static  void main(String[] args) {
+        int[] arr={2,3,5,4,3,2,4,6,5};
+        int ans=0;
+        System.out.println(singleNumber(arr));
+    }
+    public static int singleNumber(int[]arr){
+        int ans=0;
+        for(int val:arr){
+            ans=ans^val;
+        }
+    return ans;
+    }
+}
