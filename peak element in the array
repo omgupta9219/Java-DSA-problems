@@ -1,0 +1,18 @@
+public class peakElement{
+    public static void main(String[] args) {
+        int[]arr={1,2,5,11,8,9};
+        int start=0;
+        int end=arr.length-1;
+        int max=0;
+        while(start<end){
+            max=Math.max(arr[start],arr[end]);
+            if(arr[start]<arr[end]){
+                start++;
+            }
+            else{
+                end--;
+            }
+        }
+    System.out.println(max);
+    }
+}
